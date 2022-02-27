@@ -11,111 +11,123 @@ class HouseItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20.0),
-      ),
-      clipBehavior: Clip.antiAliasWithSaveLayer,
-      child: Padding(
-        padding: const EdgeInsets.all(15),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(30),
-              child: Image.network(
-                house.image,
-                height: 110,
-                fit: BoxFit.cover,
-                width: 110,
-              ),
-            ),
-            const SizedBox(
-              width: 15,
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  "\$${house.price}",
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 24),
-                ),
-                Row(
-                  children: [
-                    const Icon(
-                      Icons.home,
-                      size: 18,
-                    ),
-                    const SizedBox(
-                      width: 5,
-                    ),
-                    Text(
-                      house.city,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.w500, fontSize: 16),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                Row(
-                  children: [
-                    Row(
-                      children: [
-                        const Icon(
-                          Icons.bed,
-                          size: 18,
-                          color: AppTheme.smallIconColor,
-                        ),
-                        const SizedBox(
-                          width: 4,
-                        ),
-                        Text("${house.bedCount}"),
-                      ],
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    Row(
-                      children: [
-                        const Icon(
-                          Icons.bed,
-                          size: 18,
-                          color: AppTheme.smallIconColor,
-                        ),
-                        const SizedBox(
-                          width: 4,
-                        ),
-                        Text("${house.boll}"),
-                      ],
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    Row(
-                      children: [
-                        const Icon(
-                          Icons.stream,
-                          size: 18,
-                          color: AppTheme.smallIconColor,
-                        ),
-                        const SizedBox(
-                          width: 4,
-                        ),
-                        Text("${house.area}"),
-                      ],
-                    ),
-                  ],
-                )
-              ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(40.0),
+          color: Color(0xffF0F1F6),
+          border: Border.all(color: Colors.white54),
+          boxShadow: [
+            BoxShadow(
+              offset: Offset(0,5),
+              blurRadius: 20,
+              color: Colors.black12.withOpacity(0.05)
             )
-          ],
+          ]
+        ),
+        clipBehavior: Clip.antiAliasWithSaveLayer,
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(30),
+                child: Image.network(
+                  house.image,
+                  height: 110,
+                  fit: BoxFit.cover,
+                  width: 110,
+                ),
+              ),
+              const SizedBox(
+                width: 15,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "\$${house.price}",
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 24),
+                  ),
+                  Row(
+                    children: [
+                      const Icon(
+                        Icons.home,
+                        size: 18,
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        house.city,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 16),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Row(
+                    children: [
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.bed,
+                            size: 18,
+                            color: AppTheme.smallIconColor,
+                          ),
+                          const SizedBox(
+                            width: 4,
+                          ),
+                          Text("${house.bedCount}"),
+                        ],
+                      ),
+                      const SizedBox(
+                        width: 20,
+                      ),
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.bed,
+                            size: 18,
+                            color: AppTheme.smallIconColor,
+                          ),
+                          const SizedBox(
+                            width: 4,
+                          ),
+                          Text("${house.boll}"),
+                        ],
+                      ),
+                      const SizedBox(
+                        width: 20,
+                      ),
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.stream,
+                            size: 18,
+                            color: AppTheme.smallIconColor,
+                          ),
+                          const SizedBox(
+                            width: 4,
+                          ),
+                          Text("${house.area}"),
+                        ],
+                      ),
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );

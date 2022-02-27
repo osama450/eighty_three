@@ -13,7 +13,7 @@ class IconContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(17),
+      padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
         color: AppTheme.containerIconBackground,
         borderRadius: BorderRadius.circular(20),

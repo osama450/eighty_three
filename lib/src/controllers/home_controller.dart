@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '../services/remote_services.dart';
 
 class HomeController extends GetxController{
-  var  data = HouseResponseModel(data: []).obs;
+  Rx<HouseResponseModel>  data = HouseResponseModel(data: []).obs;
   var isLoading = true.obs;
 
   @override
