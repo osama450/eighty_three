@@ -1,4 +1,7 @@
 # eighty_three
+
+work with getx state management and mvc pattern
+
 package: 
 im used Dio : to get data from api , Getx: for state management and navigation 
 -----------------------------------------------------------------------------
@@ -6,6 +9,11 @@ this is finial UI is not perfict bec im not have design link on xd or figma
 
 ![Screenshot_20220228-112749](https://user-images.githubusercontent.com/71011907/155957844-3a15ca00-6a20-4d01-aad8-500ebe20bd6d.jpg)
 ![Screenshot_20220228-112754](https://user-images.githubusercontent.com/71011907/155957878-70e36f14-d044-443c-b0b4-a5322844b249.jpg)
+---------------------------------------------------------------------------------
+video for app :
+
+https://user-images.githubusercontent.com/71011907/155960420-09e77001-4ef4-47f0-95b5-7bb27f09fe6c.mp4
+
 ---------------------------------------------------------------------------------
 
 different screen sizes :
