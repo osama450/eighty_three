@@ -1,5 +1,6 @@
 import 'package:eighty_three/src/controllers/home_controller.dart';
-import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../models/response/house_response_model.dart';
 import '../utils/app_theme.dart';

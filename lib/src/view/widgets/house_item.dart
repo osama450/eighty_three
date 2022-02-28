@@ -11,6 +11,7 @@ class HouseItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Container(
@@ -36,9 +37,9 @@ class HouseItem extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
                 child: Image.network(
                   house.image,
-                  height: 110,
+                  height: size.height * 0.12,
                   fit: BoxFit.cover,
-                  width: 110,
+                  width: size.width * 0.250,
                 ),
               ),
               const SizedBox(
@@ -73,9 +74,11 @@ class HouseItem extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(
-                    height: 30,
+                    height: 20,
                   ),
-                  Row(
+                  Flex(
+
+                    direction: Axis.horizontal,
                     children: [
                       Row(
                         children: [
@@ -91,7 +94,7 @@ class HouseItem extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(
-                        width: 20,
+                        width: 10,
                       ),
                       Row(
                         children: [
@@ -107,7 +110,7 @@ class HouseItem extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(
-                        width: 20,
+                        width: 10,
                       ),
                       Row(
                         children: [
@@ -123,6 +126,7 @@ class HouseItem extends StatelessWidget {
                         ],
                       ),
                     ],
+
                   )
                 ],
               )

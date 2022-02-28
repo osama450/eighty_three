@@ -164,8 +164,9 @@ class HouseDetails extends StatelessWidget {
             child: Container(
               height: 100,
               width: 120,
-              decoration: const BoxDecoration(
-                  color: Colors.white,
+              decoration:  BoxDecoration(
+
+    color: Colors.grey.shade200.withOpacity(0.7),
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(100),
                       topRight: Radius.circular(100),
@@ -174,7 +175,7 @@ class HouseDetails extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Icon(
                     Icons.send_sharp,
                     color: Colors.black,
@@ -184,7 +185,7 @@ class HouseDetails extends StatelessWidget {
                   ),
                   Text(
                     '3D TOUER',
-                    style: const TextStyle(
+                    style: TextStyle(
                         fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                 ],

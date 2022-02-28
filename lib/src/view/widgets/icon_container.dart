@@ -15,6 +15,7 @@ class IconContainer extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
+
         color: AppTheme.containerIconBackground,
         borderRadius: BorderRadius.circular(20),
       ),

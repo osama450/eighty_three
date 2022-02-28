@@ -9,14 +9,14 @@ class HomeController extends GetxController{
 
   @override
   void onInit() {
-    fetchHouses();
+    _fetchHouses();
     super.onInit();
   }
 
-  void fetchHouses() async {
+  Future<void> _fetchHouses() async {
     try {
       isLoading(true);
-      var houses = await RemoteServices.fetchHouses();
+      var houses = await RemoteServices().fetchHouses();
       if (houses != null) {
         data.value = houses;
       }

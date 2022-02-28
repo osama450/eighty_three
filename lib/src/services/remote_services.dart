@@ -5,9 +5,9 @@ import 'package:eighty_three/src/view/utils/apis.dart';
 import 'package:get/get.dart';
 
 class RemoteServices {
-  static var client = Dio();
+   final client = Dio();
 
-  static Future<HouseResponseModel?> fetchHouses() async {
+   Future<HouseResponseModel?> fetchHouses() async {
     var response = await client.get(Apis().HOME_API);
     try{
 
